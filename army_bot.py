@@ -189,7 +189,7 @@ async def sklad(interaction: discord.Interaction, предмет: str, коли�
     app_commands.Choice(name="🔧 Крафт",   value="craft"),
 ])
 async def sklad_mass(interaction: discord.Interaction, предметы: str, тип: str, ответственный: str):
-    channel = bot.get_channel(SKLAD_CHANNEL_ID)
+    channel = bot.get_channel(1446272933805691078)
 
     # Парсим строку предметов
     items = []
