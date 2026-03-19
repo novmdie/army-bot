@@ -162,5 +162,28 @@ async def weekly_reminder():
                 "@everyone Сдайте **недельный отчёт** до конца дня!\n"
                 "Используй команду `/отчет` → Недельный 📊"
             )
+# ==================== /склад ====================
+@tree.command(name="склад", description="Отчёт по складу")
+@app_commands.describe(
+    дата="Дата отчёта (напр: 19.03.2026)",
+    остаток="Что на складе (напр: AK-74 - 5шт, Патроны - 200)",
+    принято="Принято за период (напр: +10)",
+    отправлено="Отправлено за период (напр: -5)",
+    ответственный="Ваше имя и фамилия"
+)
+async def sklad(interaction: discord.Interaction, дата: str, остаток: str, принято: str, отправлено: str, ответственный: str):
+    channel = bot.get_channel(OTCHETY_CHANNEL_ID)
 
+    embed = discord.Embed(
+        title="🏭 ОТЧЁТ СКЛАДА | ARMY",
+        color=0xe67e22
+    )
+    embed.add_field(name="📅 Дата", value=дата, inline=False)
+    embed.add_field(name="📦 Остаток на складе", value=остаток, inline=False)
+    embed.add_field(name="📥 Принято за период", value=f"+{принято}", inline=True)
+    embed.add_field(name="📤 Отправлено за период", value=f"-{отправлено}", inline=True)
+    embed.add_field(name="👤 Ответственный", value=ответственный, inline=False)
+
+    await channel.send(embed=embed)
+    await interaction.response.send_message("✅ Отчёт склада отправлен!", ephemeral=True)
 bot.run(TOKEN)
