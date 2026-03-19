@@ -5,7 +5,7 @@ import datetime
 import asyncio
 
 # ==================== НАСТРОЙКИ ====================
-TOKEN = "ВАШ_ТОКЕН_БОТА"  # Вставь токен сюда
+TOKEN = "MTQ4NDEyMDM3NDg1MjU4NzU0MA.GdXLSa.1ugsS4X5W7yvIVVWrpGqOTCUXOoMkyYv7F8yPo"  # Вставь токен сюда
 
 # ID каналов — замени на свои
 KADR_AUDIT_CHANNEL_ID = 123456789       # #кадровый-аудит
