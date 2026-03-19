@@ -34,6 +34,7 @@ tree = bot.tree
 @bot.event
 async def on_ready():
     await tree.sync()
+    print(f"✅ Синхронизировано {len(tree.get_commands())} команд")
     daily_reminder.start()
     weekly_reminder.start()
     print(f"✅ Бот {bot.user} запущен и готов к работе!")
