@@ -172,7 +172,7 @@ async def weekly_reminder():
     ответственный="Ваше имя и фамилия"
 )
 async def sklad(interaction: discord.Interaction, дата: str, остаток: str, принято: str, отправлено: str, ответственный: str):
-    channel = bot.get_channel(OTCHETY_CHANNEL_ID)
+    channel = bot.get_channel(1446272933805691078)
 
     embed = discord.Embed(
         title="🏭 ОТЧЁТ СКЛАДА | ARMY",
