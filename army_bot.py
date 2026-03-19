@@ -5,7 +5,7 @@ import datetime
 import asyncio
 
 # ==================== НАСТРОЙКИ ====================
-TOKEN = "MTQ4NDEyMDM3NDg1MjU4NzU0MA.GdXLSa.1ugsS4X5W7yvIVVWrpGqOTCUXOoMkyYv7F8yPo"
+TOKEN = "MTQ4NDEyMDM3NDg1MjU4NzU0MA.GoMfBR.vck7_Bp2s890jOElGPKv7ykn6hBfCGSZkSPqXc"
 
 # ID каналов — замени на свои
 KADR_AUDIT_CHANNEL_ID = 123456789       # #кадровый-аудит
