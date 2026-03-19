@@ -3,10 +3,9 @@ from discord.ext import commands, tasks
 from discord import app_commands
 import datetime
 import asyncio
-import os
 
 # ==================== НАСТРОЙКИ ====================
-TOKEN = os.environ.get("MTQ4NDEyMDM3NDg1MjU4NzU0MA.GdXLSa.1ugsS4X5W7yvIVVWrpGqOTCUXOoMkyYv7F8yPo")
+TOKEN = "MTQ4NDEyMDM3NDg1MjU4NzU0MA.GdXLSa.1ugsS4X5W7yvIVVWrpGqOTCUXOoMkyYv7F8yPo"
 
 # ID каналов — замени на свои
 KADR_AUDIT_CHANNEL_ID = 123456789       # #кадровый-аудит
